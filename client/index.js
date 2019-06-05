@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import {HashRouter} from 'react-router-dom'
 import store from './store'
 import App from './app'
+import '@babel/polyfill'
 
 
 ReactDOM.render(
