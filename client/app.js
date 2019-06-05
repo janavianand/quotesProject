@@ -1,10 +1,13 @@
 import React from 'react'
 //import Routes from './routes'
+import {Navbar, GetQuote} from './components'
 
 const App = () => {
   return (
     <div>
-      {/* <Routes /> */}<h1>Hello World</h1>
+      <Navbar />
+      <GetQuote/>
+      {/* <Routes /> */}
     </div>
   )
 }
