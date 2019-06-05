@@ -23,7 +23,13 @@ app.use((err,req,res,next)=>{
 
 let PORT = 5000;
 
-app.listen(PORT,()=>{
-  console.log(`Listening at ${PORT}`)
-  db.sync()
-})
+async function startServer(){
+  await db.sync()
+  app.listen(PORT,()=>{
+    console.log(`Listening at ${PORT}`)
+    db.sync()
+  })
+}
+
+startServer();
+
